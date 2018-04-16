@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/text.css">
+
+</head>
+
+<body>
+    <div class="container-full">
+        <!-- <img class="card-img-top" src="./image/1.JPG" alt="Card image cap"> -->
+        <div class="card-headera" style="background-color:rgb(236, 130, 157)">
+            <nav class="navbar navbar-expand-md">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./HomePage.html" target="_parent" style="color: #fff">
+                        <span class="glyphicon glyphicon-home"></span>
+                        Trang Chủ
+                    </a>
+                </div>
+
+                <div class="container-fluid">
+
+
+
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button">tìm kiếm</button>
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav navbar-center">
+                        <li>
+                            <a href="./auctionStatusPresent.html" target="_parent" style="color: #fff">
+                                <span class="glyphicon glyphicon-list-alt"></span>
+                                <!-- Trả về số lượng sản phẩm đã chọn quăn lên giỏ giỏ hàng, gồm cả menu -->
+                                Trạng thái đấu giá (
+                                <b>0</b>)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pageCart.html" target="_parent" style="color: #fff">
+                                <span class="glyphicon glyphicon-shopping-cart"></span>
+                                <!-- Trả về số lượng sản phẩm đã chọn quăn lên giỏ giỏ hàng, gồm cả menu -->
+                                Giỏ hàng (
+                                <b>0</b>)
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Nếu chưa đăng nhập thì hiện chữ đăng nhập chạy vào login -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                Người dùng</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./UserInformation.html" target="_parent">chỉnh sửa thông tin</a>
+                                <a class="dropdown-item" href="./historyBuy.html" target="_parent">Lịch sử mua hàng</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./index.html">log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- header -->
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="./HomePage.html" target="_parent">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="./clothes.html" target="_parent">Quần áo</a>
+                </li>
+                <li>
+                    <a href="./smartPhone.html" target="_parent">Điện thoại</a>
+                </li>
+                <li>
+                    <a href="./accessories.html" target="_parent">Phụ kiện</a>
+                </li>
+                <li>
+                    <a href="./toy.html" target="_parent">Đồ chơi</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <a class="navbar-brand" href="#" class="text-white">các sản phẩm hot</a>
+                        </div>
+                        <!--home -->
+                        <div class "marginphai">
+                            <a class="navbar-brand" href="./productHot.html " target="_parent" class="text-white">xem thêm</a>
+                        </div>
+                    </div>
+                    <!-- content -->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">                                
+                                                    <h4 class="card-title">Iphone X 256GB</h4>  
+                                                                              
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                            
+                                            <!--  <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay<span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span></button>
+                                            
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                <a class="navbar-brand" href="#" class="text-white">sản phẩm giá khởi điểm 1 ngàn</a>
+                            </div>
+                            <!--home -->
+                            <div class "marginphai">
+                                <a class="navbar-brand" href="./product1k.html" target="_parent" class="text-white">xem thêm</a>
+                            </div>
+                        </div>
+
+
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                <a class="navbar-brand" href="#" class="text-white">các sản phẩm mới</a>
+                            </div>
+                            <!--home -->
+                            <div class "marginphai">
+                                <a class="navbar-brand" href="./productNew.html" target="_parent" class="text-white">xem thêm</a>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Iphone X 256GB</h4>
+                                            <a> Thời gian đấu giá còn:</a>
+                                            <a href="#">00:10:00</a>
+                                             <!-- <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a> -->
+                                            <h4>  <a href="">700.000vnd</a> </h4>
+                                        </div>
+                                        <div class="card-footer" onclick="location.href='./productDetails.html';" style="cursor:pointer;">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        
+        <div class="container" style="background-color: rgba(255, 0, 0, 0.3);">
+            
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <a href="#" class="float-left">Phạm Khánh Tài</a>
+            </div>
+            
+           
+            <a href="#" class="float-none">Nguyễn Dương Minh Tâm</a>
+            <a href="#" class="float-right" > copyright@2018</a>
+           
+        </div>
+        
+    </hr>
+    </div>
+</body>
+
+</html>
