@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/css/login.css">
+</head>
+
+<body background="./image/a.png">
+  <div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <ul class="bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="loginhomehead">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <h3>
+              <p class="text-light">Trang đấu giá sản phẩm</p>
+            </h3>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="row">
+              <div class="col-lg-5">
+                <a class="text-light">Email hoặc số điện thoại</a>
+                <div class="input-group">
+                  <input type="text" class="form-control" aria-label="...">
+                </div>
+                <!-- /input-group -->
+              </div>
+              <!-- /.col-lg-6 -->
+              <div class="col-lg-5">
+                <a class="text-light">Password</a>
+                <div class="input-group">
+                  <input type="password" class="form-control" aria-label="...">
+
+                </div>
+                <!-- /input-group -->
+              </div>
+              <div class="col-lg-1">
+                <div class="btnlogin">
+                  <button type="button" class="btn btn-primary btn-md">
+                    <a href="./HomePage.html" target="_parent"class="text-light"> Đăng nhập</a>
+
+                 
+                   
+                  </button>
+                </div>
+                <!-- /input-group -->
+              </div>
+              <div class="col-lg-6">
+                <a href="" class="text-light">Quên tài khoản?</a>
+                <!-- /input-group -->
+              </div>
+              <!-- /.col-lg-6 -->
+            </div>
+            <!-- /.row -->
+          </div>
+        </div>
+      </div>
+      <!-- head -->
+      <div class="loginhomebody">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          </div>
+          <div class="col-xs-5 col-sm-5 col-md-4 col-lg-5">
+            <form id="login-form">
+              <!-- <div class="modal-body"> -->
+              <div id="div-login-msg">
+                <h3>
+                  <p class="text-light">Đăng kí tài khoản</p>
+                </h3>
+                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+              </div>
+              <div class="form-group">
+                <input id="login_username" class="form-control" type="text" placeholder="Tên tài khoản (ít nhất 6 kí tự)" required>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <input id="first_name" class="form-control" type="text" placeholder="họ" required>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <input id="last_name" class="form-control" type="text" placeholder="Tên" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input id="number" class="form-control" type="text" placeholder="Số điện thoại (từ 8 đến 12 số)" required>
+              </div>
+              <div class="form-group">
+                <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+              </div>
+              <div class="form-group">
+                <input id="login_password" class="form-control" type="password" placeholder="confirm password" required>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <div class="well">
+                    <div class="form-group">
+                      <div class="text-light">
+                        <label>Date of Birth</label>
+                      </div>
+                      <input type="date" class="form-control" id="exampleInputDOB1" placeholder="Date of Birth">
+                    </div>
+                  </div>
+                  <div class="well">
+                  </div>
+                  <!-- <div class="form-group">
+                    <input id="number" class="form-control" type="number" placeholder="Ngày sinh" required>
+                    
+                  </div> -->
+                </div>
+                <!-- <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <input id="number" class="form-control" type="number" placeholder="Tháng sinh" required>
+                  </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <input id="number" class="form-control" type="number" placeholder="Năm  sinh" required>
+                  </div>
+                </div> -->
+                <div class="form-group">
+                  <div class="text-light">
+                    <div id="login_sex">
+                      <div class="row">
+                        <h5>Giới tính </h5>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                          <div class="form-check">
+                            <input class="form-check-input" name="group100" type="radio" id="radio100">
+                            <label class="form-check-label" for="radio100">Nam</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" name="group100" type="radio" id="radio101" checked>
+                            <label class="form-check-label" for="radio101">Nữ</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="modal-footer"> -->
+              <div >
+                <button type="submit" class="btn btn-primary btn-lg btn-block" >Register</button>
+              </div>
+          </div>
+        </div>
+        </form>
+      </div>
+      </hr>
+
+      <div class="row" style="background-color: rgba(255, 0, 0, 0.3);margin-top: 70px;">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div>
+            <p class="text-light">Thông tin liên hệ</p>
+           
+            <p class="text-light">về chúng tôi</p>
+            <a href="./Admin/loginAdmin.html">Admin</a>
+            <!-- Thông tin liên hệ -->
+          </div>
+        </div>
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <a href="" class="text-light">Facebook</a>
+          </br>
+          <a href="" class="text-light">Youtobe</a>
+          </br>
+          <a href="" class="text-light">Twitter</a>
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
