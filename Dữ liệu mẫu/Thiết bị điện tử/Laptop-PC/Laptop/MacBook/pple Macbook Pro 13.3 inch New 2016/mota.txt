@@ -1,0 +1,8 @@
+﻿Bộ vi xử lý	Intel Core i5
+CPU Speed	2-3GHz
+Kích thước màn hình	13.0
+Graphics Card	Intel
+Graphics Memory	4GB
+Hard Drive Capacity	256GB
+Bộ nhớ hệ thống (MB)	4GB
+Giá 30.932.000 VND

@@ -1,0 +1,10 @@
+﻿Màn hình:	LED-backlit IPS LCD, 5.5", Retina HD
+Hệ điều hành:	iOS 9
+Camera sau:	8 MP
+Camera trước:	1.2 MP
+CPU:	Apple A8 2 nhân 64-bit
+RAM:	1 GB
+Bộ nhớ trong:	16 GB
+Thẻ nhớ:	Không
+Thẻ SIM:	1 Nano SIM
+Dung lượng pin:	2915 mAh

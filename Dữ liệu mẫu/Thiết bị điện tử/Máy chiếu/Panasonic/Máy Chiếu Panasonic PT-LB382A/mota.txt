@@ -1,0 +1,7 @@
+﻿Cường độ chiếu sáng: 3800 ANSI lumens
+Độ phân giải: XGA (1024x768)
+Độ tương phản:  12000:1
+Kích thước chiếu: 30-300 inch
+Cổng tín hiệu: HDMI, Dsub 15 pin, Video, Audio, Serial, RJ45, Lan, USB
+Bóng đèn: 230W UEH, tuổi thọ 10000 giờ
+Giá: 19.500.000 VND

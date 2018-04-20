@@ -1,0 +1,8 @@
+﻿Bộ vi xử lý : Intel® Core™ i5-6300HQ Processor (6M Cache, up to 3.20 GHz)
+Bộ nhớ RAM : 4 GB (DDR4 bus 2133MHz)
+Đồ họa : NVIDIA Geforce GTX 950M (4 GB)
+Ổ đĩa cứng : 1 TB(HDD)
+Màn hình : 15.6 inch (Full HD 1920 x 1080 pixels)
+Pin : 4 cell
+Công nghệ màn hình : Full HD
+Giá: 18.490.000 VND

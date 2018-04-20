@@ -1,0 +1,7 @@
+﻿CPU: Intel Core i7 6700HQ 2.6GHz, 6MB
+Màn hình: 15.6" công nghệ WLED-backlit
+VGA: GeForce GTX960M 4GB
+RAM: 8 GB DDR4-2133 SDRAM (1 x 8 GB)
+Dung lượng ổ cứng:	1TB SATA 7200rpm
+Loại ổ đĩa :	HDD
+Giá: 17tr8

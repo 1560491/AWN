@@ -1,0 +1,8 @@
+﻿Intel Core i7-6700HQ Processor (4 x 2.60GHz) - Max Turbo Frequency: 3.50GHz
+(8GB Onboard) + (1 x 8GB) DDR4
+2133MHz (1 slot)
+128GB SSD (M.2 2280) + 1TB SATA3 (5400rpm)
+15.6" IPS UHD (3840x2160)LED Backlight (Anti-glare)
+NVIDIA GeForce GTX 960M (4GB GDDR5 VRAM; Bus Width: 128 bit) ; Intel HD Graphics 530 - 
+4 Cell Int Li-Polymer (60 Whrs)
+Giá:33.000.000 VND

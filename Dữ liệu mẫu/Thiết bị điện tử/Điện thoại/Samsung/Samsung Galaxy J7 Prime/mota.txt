@@ -1,0 +1,12 @@
+﻿Màn hình:	PLS TFT LCD, 5.5", Full HD
+Hệ điều hành:	Android 6.0 (Marshmallow)
+Camera sau:	13 MP
+Camera trước:	8 MP
+CPU:	Exynos 7870 8 nhân 64-bit
+RAM:	3 GB
+Bộ nhớ trong:	32 GB
+Thẻ nhớ:	MicroSD, hỗ trợ tối đa 256 GB
+Thẻ SIM:	2 Nano SIM, hỗ trợ 4G
+Dung lượng pin:	3300 mAh
+
+Giá: 5.990.000₫

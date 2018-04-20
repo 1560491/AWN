@@ -1,0 +1,11 @@
+﻿Màn hình:	Super AMOLED, 6", Full HD
+Hệ điều hành:	Android 6.0 (Marshmallow)
+Camera sau:	16 MP
+Camera trước:	8 MP
+CPU:	Qualcomm Snapdragon 652 8 nhân
+RAM:	4 GB
+Bộ nhớ trong:	32 GB
+Thẻ nhớ:	MicroSD, hỗ trợ tối đa 256 GB
+Thẻ SIM:	2 Nano SIM
+Dung lượng pin:	5000 mAh, có sạc nhanh
+Giá: 10.990.000₫

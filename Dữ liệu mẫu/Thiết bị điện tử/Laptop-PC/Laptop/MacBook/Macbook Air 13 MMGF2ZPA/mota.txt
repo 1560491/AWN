@@ -1,0 +1,5 @@
+﻿Công nghệ CPU :	Core i5 Dual-Core 1.60 GHz 3 MB (L3 Cache) upto 2.7 GHz
+Ram 8GB/LPDDR3/1600Mhz
+SSD 128GB
+Intel HD GraPhics 6000
+13.3 inch LED-backlit

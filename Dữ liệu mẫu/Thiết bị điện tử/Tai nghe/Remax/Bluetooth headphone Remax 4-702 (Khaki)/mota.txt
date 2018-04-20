@@ -1,0 +1,7 @@
+﻿Đường kính: 40mm
+Đáp ứng tần số: 20Hz - 20kHz
+Trở kháng: 32Ω
+Độ nhạy (SPL): 110 ± 5dB
+Công suất đầu vào: 10mW
+Cắm:: ¢ 3.5mm V4.1 CSR Bluetooth
+Giá: 1.190.000 VND

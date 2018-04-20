@@ -1,0 +1,6 @@
+﻿Kích thước màn hình	3.0
+Độ phân giải camera (MP)	20.0
+Sensor Type	Cảm biến CMOS
+Độ phân giải video	1080p
+Zoom quang	50.0
+Giá :26.775.000 VND

@@ -1,0 +1,8 @@
+﻿Hệ thống chống rung 5 trục
+Độ nhạy iso	Auto, 50, 80, 100 - 25600
+Tốc độ màn trập	Max: 1/8000 giây. Min: 30 giây.
+Bộ xử lý hình ảnh	BIONZ X
+Màn hình	LCD
+Cổng kết nối	USB 2.0, NFC, WiFi
+Độ phân giải	24,3 (MP)
+Giá: 34.500.000 VND

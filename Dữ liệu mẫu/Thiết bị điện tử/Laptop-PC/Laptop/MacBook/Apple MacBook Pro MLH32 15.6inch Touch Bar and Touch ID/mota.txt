@@ -1,0 +1,7 @@
+﻿Chip :2.6GHz quad-core Intel Core i7 processor, Turbo Boost up to 3.5GHz
+Ram: 16GB 2133MHz memory
+Hard-Drive: 256GB PCIe-based SSD
+VGA: Radeon Pro 450 with 2GB memory
+Special :Four Thunderbolt 3 ports
+	Touch Bar and Touch ID
+Giá :57.500.000 VND
