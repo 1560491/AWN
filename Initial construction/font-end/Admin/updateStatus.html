@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>updateStatus</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/text.css">
+
+</head>
+
+<body>
+    <div class="container-full">
+        <!-- <img class="card-img-top" src="./image/1.JPG" alt="Card image cap"> -->
+        <div class="card-headera" style="background-color:rgb(236, 130, 157)">
+            <nav class="navbar navbar-expand-md">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./homeAdmin.html" target="_parent" style="color: #fff">
+                        <span class="glyphicon glyphicon-home"></span>
+                        Trang Chủ
+                    </a>
+                </div>
+
+                <div class="container-fluid">
+
+
+
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button">tìm kiếm</button>
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav navbar-center">
+                        <li>
+                            <a href="./auctionStatusPresent.html" target="_parent" style="color: #fff">
+                                <span class="glyphicon glyphicon-list-alt"></span>
+                                <!-- Trả về số lượng sản phẩm đã chọn quăn lên giỏ giỏ hàng, gồm cả menu -->
+                                Trạng thái đấu giá (
+                                <b>0</b>)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pageCart.html" target="_parent" style="color: #fff">
+                                <span class="glyphicon glyphicon-shopping-cart"></span>
+                                <!-- Trả về số lượng sản phẩm đã chọn quăn lên giỏ giỏ hàng, gồm cả menu -->
+                                Giỏ hàng (
+                                <b>0</b>)
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Nếu chưa đăng nhập thì hiện chữ đăng nhập chạy vào login -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                Người dùng</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./UserInformation.html" target="_parent">chỉnh sửa thông tin</a>
+                                <a class="dropdown-item" href="./UserInformation.html" target="_parent">Quản trị cửa hàng</a>
+                                <a class="dropdown-item" href="./historyBuy.html" target="_parent">Lịch sử mua hàng</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- header -->
+
+        <div class="container-fluid">
+
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Danh Mục </a>
+                    <a href="./insertProduct.html" target="_parent" class="list-group-item list-group-item-action ">Thêm sản phẩm</a>
+                    <a href="./deleteUpdateProduct.html" target="_parent" class="list-group-item list-group-item-action   ">Xóa sửa sản phẩm</a>
+                    <a href="./updateStatus.html" target="_parent" class="list-group-item list-group-item-action active " style="font-weight: bold; color: rgb(49, 94, 219);">Cập nhật tình trạng</a>
+
+                </div>
+            </div>
+
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+
+
+
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a  href="./homeAdmin.html" target="_parent">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="./clothes.html" target="_parent">Quần áo</a>
+                    </li>
+                    <li>
+                        <a href="./smartPhone.html" target="_parent">Điện thoại</a>
+                    </li>
+                    <li>
+                        <a href="./accessories.html" target="_parent">Phụ kiện</a>
+                    </li>
+                    <li>
+                        <a href="./toy.html" target="_parent">Đồ chơi</a>
+                    </li>
+                </ul>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="UI-history-buy"></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" style="font-weight: bold; color: #0078D7;">Tình trạng sản phẩm</h3>
+                        </div>
+
+                        <table class="table table-bordered table-sm">
+                            <thead>
+                                <tr>
+                                    <td>Số hóa đơn:
+                                        <a href="">13</a>
+                                    </td>
+                                    <td>Ngày mua: 20-03-2018</td>
+                                    <td>Tổng tiền: 14 000 000vnd</td>
+                                    <td>ID người mua: 3</td>
+                                    <td>Tên: tâm</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">Địa chỉ: 227 nguyễn văn cừ phường 1 quận 5 hồ chí minh</td>
+
+                                </tr>
+                                <tr>
+                                    <th>ID sản phẩm</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Loại</th>
+                                    <th>Giá</th>
+                                    <th>Cập nhật</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Bao cao su durex</td>
+                                    <td>đồ dùng hằng ngày</td>
+                                    <td>50 000vnd</td>
+
+                                    <td>
+                                        <select class="selectpicker">
+                                            <option>Đã giao</option>
+                                            <option>Chưa giao</option>
+                                            <option>Đang giao</option>
+
+                                        </select>
+
+                                        <a class="btn btn-xs btn-success cart-update" data-id="39" href="javascript:;" role="button">
+                                            <span class="glyphicon glyphicon-ok">Cập nhật</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <td>13</td>
+                                        <td>sony a6000</td>
+                                        <td>máy ảnh</td>
+                                        <td>14 000 000vnd</td>
+    
+                                        <td>
+                                            <select class="selectpicker">
+                                                <option>Đã giao</option>
+                                                <option>Chưa giao</option>
+                                                <option>Đang giao</option>
+    
+                                            </select>
+    
+                                            <a class="btn btn-xs btn-success cart-update" data-id="39" href="javascript:;" role="button">
+                                                <span class="glyphicon glyphicon-ok">Cập nhật</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                            <td>14</td>
+                                            <td>Iphone</td>
+                                            <td>Điện thoại</td>
+                                            <td>20 000 000vnd</td>
+        
+                                            <td>
+                                                <select class="selectpicker">
+                                                    <option>Đã giao</option>
+                                                    <option>Chưa giao</option>
+                                                    <option>Đang giao</option>
+        
+                                                </select>
+        
+                                                <a class="btn btn-xs btn-success cart-update" data-id="39" href="javascript:;" role="button">
+                                                    <span class="glyphicon glyphicon-ok">Cập nhật</span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    <table class="table table-bordered table-sm">
+                            <thead>
+                                <tr>
+                                    <td>Số hóa đơn:
+                                        <a href="">13</a>
+                                    </td>
+                                    <td>Ngày mua: 20-03-2018</td>
+                                    <td>Tổng tiền: 14 000 000vnd</td>
+                                    <td>ID người mua: 3</td>
+                                    <td>Tên: tâm</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">Địa chỉ: 227 nguyễn văn cừ phường 1 quận 5 hồ chí minh</td>
+
+                                </tr>
+                                <tr>
+                                    <th>ID sản phẩm</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Loại</th>
+                                    <th>Giá</th>
+                                    <th>Cập nhật</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Bao cao su durex</td>
+                                    <td>đồ dùng hằng ngày</td>
+                                    <td>50 000vnd</td>
+
+                                    <td>
+                                        <select class="selectpicker">
+                                            <option>Đã giao</option>
+                                            <option>Chưa giao</option>
+                                            <option>Đang giao</option>
+
+                                        </select>
+
+                                        <a class="btn btn-xs btn-success cart-update" data-id="39" href="javascript:;" role="button">
+                                            <span class="glyphicon glyphicon-ok">Cập nhật</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <td>13</td>
+                                        <td>sony a6000</td>
+                                        <td>máy ảnh</td>
+                                        <td>14 000 000vnd</td>
+    
+                                        <td>
+                                            <select class="selectpicker">
+                                                <option>Đã giao</option>
+                                                <option>Chưa giao</option>
+                                                <option>Đang giao</option>
+    
+                                            </select>
+    
+                                            <a class="btn btn-xs btn-success cart-update" data-id="39" href="javascript:;" role="button">
+                                                <span class="glyphicon glyphicon-ok">Cập nhật</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                            <td>14</td>
+                                            <td>Iphone</td>
+                                            <td>Điện thoại</td>
+                                            <td>20 000 000vnd</td>
+        
+                                            <td>
+                                                <select class="selectpicker">
+                                                    <option>Đã giao</option>
+                                                    <option>Chưa giao</option>
+                                                    <option>Đang giao</option>
+        
+                                                </select>
+        
+                                                <a class="btn btn-xs btn-success cart-update" data-id="39" href="javascript:;" role="button">
+                                                    <span class="glyphicon glyphicon-ok">Cập nhật</span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
