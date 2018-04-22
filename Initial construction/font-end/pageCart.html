@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PageCart</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/text.css">
+
+</head>
+
+<body>
+    <div class="container-full">
+        <!-- <img class="card-img-top" src="./image/1.JPG" alt="Card image cap"> -->
+        <div class="card-headera" style="background-color:rgb(236, 130, 157)">
+            <nav class="navbar navbar-expand-md">
+
+                <div class="navbar-header">
+                        <a class="navbar-brand" href="./HomePage.html" target="_parent" style="color: #fff">
+                        <span class="glyphicon glyphicon-home"></span>
+                        Trang Chủ
+                    </a>
+                </div>
+
+                <div class="container-fluid">
+
+
+
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button">tìm kiếm</button>
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav navbar-center">
+                        <li>
+                            <a href="./auctionStatusPresent.html" target="_parent" style="color: #fff">
+                                <span class="glyphicon glyphicon-list-alt"></span>
+                                <!-- Trả về số lượng sản phẩm đã chọn quăn lên giỏ giỏ hàng, gồm cả menu -->
+                                Trạng thái đấu giá (
+                                <b>0</b>)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pageCart.html" target="_parent" style="color: #fff" >
+                                <span class="glyphicon glyphicon-shopping-cart"></span>
+                                <!-- Trả về số lượng sản phẩm đã chọn quăn lên giỏ giỏ hàng, gồm cả menu -->
+                                Giỏ hàng (
+                                <b>0</b>)
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Nếu chưa đăng nhập thì hiện chữ đăng nhập chạy vào login -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                Người dùng</a>
+                            <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="./UserInformation.html" target="_parent">chỉnh sửa thông tin</a>
+                                    <a class="dropdown-item" href="./historyBuy.html" target="_parent">Lịch sử mua hàng</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- header -->
+        <div class="container">
+            <!--     -->
+            <!-- <h2>List Group </h2> -->
+            <!-- <div class="row"> -->
+            <!-- <div class="col-md-2">
+                <div class="list-group list-cust">
+                    <a href="#" class="list-group-item active">
+                        Danh Mục
+                    </a>
+                    <a href="#" class="list-group-item">Quần áo</a>
+                    <a href="#" class="list-group-item">Điện thoại</a>
+                    <a href="#" class="list-group-item">Phụ kiện</a>
+                    <a href="#" class="list-group-item">Đồ chơi</a>
+                </div>
+            </div> -->
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link " id="nav-profile-tab"  href="./UserInformation.html" role="tab" aria-controls="nav-profile"
+                        aria-selected="false">Thôn tin cá nhân</a>
+                    <a class="nav-item nav-link " id="nav-history-tab"  href="./historyBuy.html" role="tab" aria-controls="nav-history"
+                        aria-selected="false">Lịch sử mua hàng</a>
+                    <a class="nav-item nav-link active" id="nav-bag-tab"  href="./pageCart.html" role="tab" aria-controls="nav-bag"
+                        aria-selected="true">Giỏ hàng</a>
+                </div>  
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                    
+                <!-- Lịch sử mua hàng -->
+                <div class="tab-pane fade show active" id="nav-bag" role="tabpanel" aria-labelledby="nav-bag-tab">
+                <!-- <div class="tab-pane fade" id="nav-bag" role="tabpanel" aria-labelledby="nav-bag-tab"> -->
+                    <div class="UI-history-buy">
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <label class=" col-sm-3 control-label">Nhập vào địa chỉ thanh toán</label>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <input required maxlength="100" type="text" class="form-control" id="txtDiaChi" name="txtDiaChi" value="">
+                            <span style="color:#FF0000" class="validate" id="address-edit-validates" hidden></span>
+                        </div>
+                    
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Giá ban đầu</th>
+                              
+                              
+                                <th>Thành tiền</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Samsung E1200</td>
+                                <td>350 VNĐ</td>
+                         
+                               
+                                <td>350 VNĐ</td>
+                                <td class="text-right">
+                                    <a class="btn btn-xs btn-danger cart-remove" data-id="31" href="javascript:;" role="button">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </a>
+                                    <!-- <a class="btn btn-xs btn-primary cart-update" data-id="31" href="javascript:;" role="button">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                    </a> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Samsung Galaxy J3 Pro</td>
+                                <td>4,490,000 VNĐ</td>
+                                <!-- <td>
+                                    <input class="quantity-textfield" type="number" min="1" value="1" max="99" style="width: 45px;">
+                                </td> -->
+                              
+                                <td>4,490,000 VNĐ</td>
+                                <td class="text-right">
+                                    <a class="btn btn-xs btn-danger cart-remove" data-id="28" href="javascript:;" role="button">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </a>
+                                    <!-- <a class="btn btn-xs btn-primary cart-update" data-id="28" href="javascript:;" role="button">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                    </a> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Samsung Galaxy J3 LTE</td>
+                                <td>2,990,000 VNĐ</td>
+                                <!-- <td>
+                                    <input class="quantity-textfield" type="number" min="1" value="2" max="99" style="width: 45px;">
+                                </td> -->
+                               
+                                <td>5,980,000 VNĐ</td>
+                                <td class="text-right">
+                                    <a class="btn btn-xs btn-danger cart-remove" data-id="29" href="javascript:;" role="button">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </a>
+                                    <!-- <a class="btn btn-xs btn-primary cart-update" data-id="29" href="javascript:;" role="button">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                    </a> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Samsung Galaxy J2 Prime</td>
+                                <td>2,690,000 VNĐ</td>
+                                <!-- <td>
+                                    <input class="quantity-textfield" type="number" min="1" value="1" max="100" style="width: 45px;">
+                                </td> -->
+                               
+                                <td>2,690,000 VNĐ</td>
+                                <td class="text-right">
+                                    <a class="btn btn-xs btn-danger cart-remove" data-id="30" href="javascript:;" role="button">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </a>
+                                    <!-- <a class="btn btn-xs btn-primary cart-update" data-id="30" href="javascript:;" role="button">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                    </a> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Samsung Galaxy J7 Pro</td>
+                                <td>6,990,000 VNĐ</td>
+                                <!-- <td>
+                                    <input class="quantity-textfield" type="number" min="1" value="1" max="100" style="width: 45px;">
+                                </td> -->
+                               
+                                <td>6,990,000 VNĐ</td>
+                                <td class="text-right">
+                                    <a class="btn btn-xs btn-danger cart-remove" data-id="26" href="javascript:;" role="button">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </a>
+                                    <!-- <a class="btn btn-xs btn-primary cart-update" data-id="26" href="javascript:;" role="button">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                    </a> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Samsung Galaxy J7 Prime</td>
+                                <td>5,490,000 VNĐ</td>
+                                <!-- <td>
+                                    <input class="quantity-textfield" type="number" min="1" value="1" max="100" style="width: 45px;">
+                                </td> -->
+                              
+                                <td>5,490,000 VNĐ</td>
+                                <td class="text-right">
+                                    <a class="btn btn-xs btn-danger cart-remove" data-id="27" href="javascript:;" role="button">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </a>
+                                    <!-- <a class="btn btn-xs btn-primary cart-update" data-id="27" href="javascript:;" role="button">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                    </a> -->
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <td>
+                                <a class="btn btn-success" href="./HomePage.html" role="button">
+                                    <span class="glyphicon glyphicon-backward"></span>
+                                    Tiếp tục đấu giá
+                                </a>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>
+                                <b>TỔNG TIỀN : 25,640,350</b>
+                            </td>
+                            <td class="text-right">
+                                <form id="f2" method="POST" action="" role="form">
+                                    <input type="hidden" name="txtTotalMoney" id="txtTotalMoney" value="25640350">
+                                    <input type="hidden" name="txtAddress" id="txtAddress" value="">
+                                </form>
+                                <button class="btn btn-primary" name="btnThanhToan" id="btnThanhToan">
+                                    <span class="glyphicon glyphicon-bell"></span>
+                                    Thanh toán
+                                </button>
+                            </td>
+                        </tfoot>
+                    </table>
+                </div>
+                </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
