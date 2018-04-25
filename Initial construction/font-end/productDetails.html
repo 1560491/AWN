@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ProductDetails</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/text.css">
+    <script language="JavaScript" src="./assets/js/test.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container-full">
+        <!-- <img class="card-img-top" src="./image/1.JPG" alt="Card image cap"> -->
+        <div class="card-headera" style="background-color:rgb(236, 130, 157)">
+            <nav class="navbar navbar-expand-md">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./HomePage.html" target="_parent" style="color: #fff">
+                        <span class="glyphicon glyphicon-home"></span>
+                        Trang Chủ
+                    </a>
+                </div>
+
+                <div class="container-fluid">
+
+
+
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button">tìm kiếm</button>
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav navbar-center">
+                        <li>
+                            <a href="./auctionStatusPresent.html" target="_parent" style="color: #fff">
+                                <span class="glyphicon glyphicon-list-alt"></span>
+                                <!-- Trả về số lượng sản phẩm đã chọn quăn lên giỏ giỏ hàng, gồm cả menu -->
+                                Trạng thái đấu giá (
+                                <b>0</b>)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./pageCart.html" target="_parent" style="color: #fff">
+                                <span class="glyphicon glyphicon-shopping-cart"></span>
+                                <!-- Trả về số lượng sản phẩm đã chọn quăn lên giỏ giỏ hàng, gồm cả menu -->
+                                Giỏ hàng (
+                                <b>0</b>)
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Nếu chưa đăng nhập thì hiện chữ đăng nhập chạy vào login -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                Người dùng</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./UserInformation.html" target="_parent">chỉnh sửa thông tin</a>
+                                <a class="dropdown-item" href="./historyBuy.html" target="_parent">Lịch sử mua hàng</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./index.html">log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- header -->
+        <div class="container-fluid">
+            <!--     -->
+            <!-- <h2>List Group </h2> -->
+            <!-- <div class="row"> -->
+            <div class="col-md-2">
+                <div class="list-group list-cust">
+                    <a href="#" class="list-group-item active">
+                        Danh Mục
+                    </a>
+                    <a href="./clothes.html" target="_parent" class="list-group-item">Quần áo</a>
+                    <a href="./smartPhone.html" target="_parent" class="list-group-item">Điện thoại</a>
+                    <a href="./accessories.html" target="_parent" class="list-group-item">Phụ kiện</a>
+                    <a href="./toy.html" target="_parent" class="list-group-item">Đồ chơi</a>
+                </div>
+            </div>
+
+            <!-- <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                   
+                    <a class="nav-item nav-link active" id="nav-productHot-tab"  href="./productHot.html" target="_parent" aria-controls="nav-productHot"
+                        aria-selected="true"> Sản phẩm Host</a>
+                    <a class="nav-item nav-link " id="nav-productNew-tab"  href="./productNew.html" role="tab" aria-controls="nav-productNew"
+                        aria-selected="false"> Sản phẩm mới nhất</a>
+                      
+                    <a class="nav-item nav-link" id="nav-start1k-tab"  href="./product1k.html" role="tab" aria-controls="nav-start1k" aria-selected="false">Sản phẩm khởi điểm 1000d</a>
+                </div>
+            </nav> -->
+            <a href="./HomePage.html" target="_parent"></a>
+            <div class="tab-content" id="nav-tabContent">
+                <!-- <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"> -->
+                <div class="tab-pane fade show active" id="nav-productDetails" role="tabpanel" aria-labelledby="nav-productDetails-tab">
+                    <div class="user-inf-inf">
+
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <!-- </div>
+                        
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                            <h3 class="panel-title">Sản phẩm:
+                                        </div>
+                                        </h3>
+                                        <a href="">Iphone X</a>
+
+                                    </div>
+
+                                </div>
+                                <div class="panel-body">
+
+                                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+
+                                                <img src="./image/a.png" class="img-thumbnail" width="200" height="200">
+                                            </div>
+                                            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                                <form>
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                            <label>Giá thầu hiện tại: </label>
+
+                                                            <input type="hiden" class="form-control" placeholder="1.500 0000 vnd" disabled>
+
+                                                        </div>
+
+                                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                            <label>Người thắng hiện tại: </label>
+
+                                                            <input type="hiden" class="form-control" placeholder="minhtam.io" disabled>
+
+                                                        </div>
+
+
+                                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                            <table class="table table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Kết thúc trong</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="">00:10:00</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+
+                                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                            <div class="row">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-btn">
+                                                                        <button class="btn btn-default" type="button" id="btn-plus">
+                                                                            <span class="glyphicon glyphicon-minus"></span>
+                                                                        </button>
+                                                                    </span>
+                                                                    <input type="text" class="form-control" name="qty" id="qty" value="1600000">
+                                                                    <span class="input-group-btn">
+                                                                        <button class="btn btn-default" type="button" id="btn-minus">
+                                                                            <span class="glyphicon glyphicon-plus"></span>
+                                                                        </button>
+                                                                    </span>
+                                                                </div>
+                                                                <!-- /input-group -->
+                                                            </div>
+                                                            <!-- /.col-lg-6 -->
+
+                                                        </div>
+                                                        <!-- /.row -->
+                                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+                                                            <button type="button" class="btn btn-warning">Đấu giá ngay</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                        <div class="UI-history-buy">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <center class="font-weight-bold">Trạng thái đấu giá</center>
+                                                        </td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Tài khoản</th>
+                                                        <td>Giá Đấu</td>
+                                                        <td colspan="2">Thời gian đấu giá</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">minhtam.io</th>
+                                                        <td>1500000</td>
+                                                        <td colspan="2">12-04-2018 16:25:20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">qui.abc</th>
+                                                        <td>1200000</td>
+                                                        <td colspan="2">12-04-2018 16:20:20</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                            <center class="font-weight-bold">chi tiết sản phẩm</center>
+                                            <p>
+                                                Chỉ là chiếc điện thoại bàn phím giá rẻ nhưng hãng cũng khá chăm chút ngoại hình cho máy, máy được làm bo cong tạo sự thon
+                                                gọn, mặt lưng có các họa kẻ ngang bóng nổi bật..Máy có 1 đường viền chạy
+                                                xung quanh ngăn cách giữa mặt trước và mặt sau của máy ra rõ ràng, cổng kết
+                                                nối có nắp bảo vệ.Máy khá nhỏ gọn, trọng lượng nhẹ chỉ 65 g, mặt lưng có
+                                                hoạ tiết kẻ ngang tạo điểm nhấn cho máy.Có hai màu đen, trắng cơ bản cho
+                                                bạn lựa chọn. Một mẹo nhỏ cho bạn khi mua máy mới, bạn hãy gắn sim vào và
+                                                gọi số 900 (miễn phí) để kiểm tra âm thanh có to, rõ vừa ý của bạn chưa..Máy
+                                                sử dụng chỉ 1 sim duy nhất, pin dung lượng 800 mAh cho thời gian sử dụng
+                                                khoảng 2 đến 4 ngày tuỳ vào nhu cầu sử dụng của bạn.Màn hình nhỏ 1.5 inch
+                                                nhưng hiển thị khá tốt so với các dòng sản phẩm cùng phân khúc giá, máy có
+                                                các tiện ích cơ bản như ghi chú, báo thức....Bàn phím được ngăn cách rõ ràng
+                                                để dễ dàng ấn hơn.Một nhược điểm nhỏ của máy chính là các cổng kết nối của
+                                                máy phải sử dụng theo riêng bộ của hãng, jack sạc và tai nghe đều dùng chuẩn
+                                                riêng, bạn hãy giữ cẩn thận để tránh bị hư hỏng.Với mức giá mà mọi người
+                                                đều có thể dễ dàng sở hữu chiếc điện thoại bàn phím Samsung E1200 với các
+                                                tiện ích căn bản nhất
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                                <div><h3>Sản phẩm cùng loại</h3></div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="card-deck">
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                                    <div class="card-body">                                
+                                                                <h4 class="card-title">Iphone X 256GB</h4>  
+                                                                                          
+                                                        <a> Thời gian đấu giá còn:</a>
+                                                        <a href="#">00:10:00</a>
+                                                        
+                                                        <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a>
+                                                        <h4>  <a href="">700.000vnd</a> </h4>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay<span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span></button>
+                                                        
+                                                    </div>
+                                                  
+                                                </div>
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Iphone X 256GB</h4>
+                                                        <a> Thời gian đấu giá còn:</a>
+                                                        <a href="#">00:10:00</a>
+                                                        <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a>
+                                                        <h4>  <a href="">700.000vnd</a> </h4>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+            
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Iphone X 256GB</h4>
+                                                        <a> Thời gian đấu giá còn:</a>
+                                                        <a href="#">00:10:00</a>
+                                                        <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a>
+                                                        <h4>  <a href="">700.000vnd</a> </h4>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card-deck">
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Iphone X 256GB</h4>
+                                                        <a> Thời gian đấu giá còn:</a>
+                                                        <a href="#">00:10:00</a>
+                                                        <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a>
+                                                        <h4>  <a href="">700.000vnd</a> </h4>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+            
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Iphone X 256GB</h4>
+                                                        <a> Thời gian đấu giá còn:</a>
+                                                        <a href="#">00:10:00</a>
+                                                        <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a>
+                                                        <h4>  <a href="">700.000vnd</a> </h4>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+            
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Iphone X 256GB</h4>
+                                                        <a> Thời gian đấu giá còn:</a>
+                                                        <a href="#">00:10:00</a>
+                                                        <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a>
+                                                        <h4>  <a href="">700.000vnd</a> </h4>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card-deck">
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Iphone X 256GB</h4>
+                                                        <a> Thời gian đấu giá còn:</a>
+                                                        <a href="#">00:10:00</a>
+                                                        <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a>
+                                                        <h4>  <a href="">700.000vnd</a> </h4>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+            
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Iphone X 256GB</h4>
+                                                        <a> Thời gian đấu giá còn:</a>
+                                                        <a href="#">00:10:00</a>
+                                                        <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a>
+                                                        <h4>  <a href="">700.000vnd</a> </h4>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+            
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./image/a.png" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Iphone X 256GB</h4>
+                                                        <a> Thời gian đấu giá còn:</a>
+                                                        <a href="#">00:10:00</a>
+                                                        <a class="btn btn-warning " href="./productDetails.html" target="_parent">Chi tiết</a>
+                                                        <h4>  <a href="">700.000vnd</a> </h4>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Đấu giá ngay</button>
+            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
