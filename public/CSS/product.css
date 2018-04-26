@@ -1,0 +1,293 @@
+.btn-danger
+{
+    background-color: #dc3333;
+    border-color: #dc3333;
+}
+.tab-pane .item-content
+{
+    margin-top: 20px
+}
+
+.rows-bids
+{
+    text-align: left;
+    margin-left: 26px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+
+}
+.bids
+{
+    color: #333;
+}
+.item-price
+{
+    text-align: right;
+    margin-right: 25px;
+}
+.time-rows
+{
+    margin-top: 15px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+.submit_btn
+{
+    text-align: center;
+    margin-top: 0px;
+
+}
+input.price
+{
+    text-align: center;
+    width: 120px;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 6px;
+}
+.nav-tabs li
+{
+    width: 600px;
+}
+
+.nav-tabs > li.active a:after, .nav-tabs > li:hover a:after
+{
+    margin-top: 10px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+{
+    color: #fff;
+    background-color: #dc3333;
+}
+.nav-tabs>li>a
+{
+    margin-right: -1px;
+    border-radius: 0px;
+}
+
+.header-title .title-left h2 a
+{
+    font-weight: bold;
+}
+
+.nhomsp
+{
+    background-color: #fff;
+    border: #000000 1px solid;
+}
+
+.product-seller  p, .start-time-row, .end-time-row, .danhgia p, .daugiacaonhat p
+{
+    line-height: 20px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    margin-top: 0px;
+    color: #363636;
+}
+.product-seller a, .danhgia a, .daugiacaonhat a
+{
+    color: #d2092d;
+    text-decoration: none;
+}
+.item-price-bid
+{
+    font-family: Arial;
+    font-size: 24px!important;
+    line-height: 20px;
+    margin: 0px;
+    color: #dc3333;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.submit_btn
+{
+    text-align: left;
+    margin: 6px 0px 12px 0px;
+}
+.button-bid
+{
+    display: block;
+    width: 200px;
+    height: 48px;
+    margin: 20px 0px;
+    border: 1px solid #c65201;
+    color: #fff;
+    background-color: #e8680e;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 4px;
+    font-family: inherit;
+    vertical-align: bottom;
+    cursor: pointer;
+    font-size: 125%;
+    font-weight: 700;
+}
+.table, .data-table thead th, thead
+{
+    border: #e8680e 1px solid;
+    margin-bottom: 10px;
+}
+.table-hover>tbody>tr:hover
+{
+    background-color: #FFFFB1;
+}
+.data-table thead th, thead
+{
+    background-color: #e8680e;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+{
+    border-top: #e8680e 1px solid;
+}
+
+#auction-stats
+{
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+}
+
+.button-bid:hover
+{
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+.service
+{
+    height: 170px;
+}
+.nav-tabs>li>a
+{
+    border: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+{
+    border: none;
+}
+.underline
+{
+    position: relative;
+    margin-bottom: 30px;
+}
+.underline:before
+{
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #9c6;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: 1;
+}
+.tab-content .content h3
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.list-group li
+{
+    padding-left: 0;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    padding: 20px 15px;
+    margin-bottom: -1px;
+}
+.abc
+{
+    margin-left: 25px;
+    background: url('../Images/bullet_green1.png') no-repeat 0px center;
+}
+.prd_view_slide #gallery_01.owl-theme .owl-controls
+{
+    margin-top: -30px
+}
+.product-plus .owl-item
+{
+    padding:10px
+}
+
+.product-plus .clickable
+{
+    margin-top: 25px;
+}
+
+.new_title h2
+{
+    text-transform: uppercase;
+    line-height: 27px;
+    margin: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    color: #dc3333;
+}
+.product-name a
+{
+    font-size: 30px;
+}
+li{
+    list-style: none;
+}
+.table>thead>tr>th
+{
+    border-bottom: none;
+}
+.product_infomation .product_title h1
+{
+    margin-bottom: 0px;
+}
+input[type=checkbox]+ label span
+{
+    display: inline-block;
+    font-size: 20px;
+}
+input[type=checkbox]
+{
+    display: none;
+}
+input[type=checkbox]:checked+ label span
+{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: yellow;
+}
+.checkbox label, .radio label
+{
+    padding-left: 0px;
+}
+.daugiacaonhat
+{
+    margin-top: 15px;
+}
+h2
+{
+    font-size: 27px;
+}
+.giamuangay
+{
+    margin-left: 24%;
+    margin-top: 6%;
+    display: inline-flex;
+}
+.item-price-buy
+{
+    font-family: Arial;
+    font-size: 24px!important;
+    line-height: 20px;
+    margin: 0px;
+    color: #dc3333;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}

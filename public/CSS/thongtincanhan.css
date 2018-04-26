@@ -1,0 +1,62 @@
+.container
+{
+    margin-bottom: 10px;
+}
+li.active
+{
+    background-color: #ffffff;
+}
+.container .nav-stacked a{
+    background-color: #7ee88b;
+    color: #465c5b;
+    height: 40px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover
+{
+    color: #465C5b
+}
+.nav>li>a:focus
+{
+    background-color: #ffffff;
+}
+.nav>li>a:hover
+{
+    background-color: #91eb9c;
+}
+.nav
+{
+    margin-top: 40px;
+}
+.panel-danger
+{
+    border-color: #91eb9c;
+}
+.panel-danger>.panel-heading
+{
+    background-color: #5CB85c;
+    border-color: #5CB85c;
+    color: #000000;
+}
+.panel-title
+{
+    color: #ffffff;
+}
+
+
+.table>tbody>tr>td{
+    text-align: left;
+}
+
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: #ff9d06
+}
+
+
+
+.checkbox label, .radio label {
+    padding-left: 0;
+}

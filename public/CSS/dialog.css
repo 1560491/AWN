@@ -1,0 +1,102 @@
+#mail-div
+{
+	display: none;
+}
+
+#coupon-link-div, #login-link-div
+{
+	display: none;
+}
+
+#simple_dialog
+{
+    display: none;
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    margin-left: -210px;
+    width: 420px;    
+    z-index:101;
+}
+
+#simple_dialog .b 
+{ 
+  background: transparent url(../images/b.png) !important; 
+  background: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/content/images/b.png",sizingMethod="scale")
+}
+
+#simple_dialog .tl {
+  background: transparent url(../images/tl.png) !important;
+  background :none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/content/images/tl.png",sizingMethod="scale")
+}
+
+#simple_dialog .tr {
+  background: transparent url(../images/tr.png) !important;
+  background :none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/content/images/tr.png",sizingMethod="scale")
+}
+
+#simple_dialog .bl {
+  background: transparent url(../images/bl.png) !important;
+  background: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/content/images/bl.png",sizingMethod="scale")
+}
+
+#simple_dialog .br {
+  background: transparent url(../images/br.png) !important;
+  background: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/content/images/br.png",sizingMethod="scale")
+}
+
+#simple_dialog .tl, #simple_dialog .tr, #simple_dialog .bl, #simple_dialog .br {
+  height: 10px;
+  width: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+
+#simple_dialog table {
+  border-collapse: collapse;
+  width:100%;
+}
+
+#simple_dialog td {
+  border-bottom: 0;
+  padding: 0;
+}
+
+ * html #simple_dialog {
+	 position: absolute;
+	 bottom:auto;
+	 z-index:101;
+}
+
+#simple_dialog.fixed
+{
+	position:fixed;
+}
+
+ * html #simple_dialog.fixed {
+	 position: absolute;
+	 top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+	 bottom:auto;
+	 /*top:expression(eval(document.documentElement.scrollTop));*/
+	 z-index:101;
+}
+
+#simple_dialog .close
+{
+}
+
+#simple_dialog .action-bar
+{
+	text-align: right; 
+	margin-right: 10px; 
+	margin-left: 10px; 
+	padding-top: 5px; 
+	border-top: solid 1px #ccc; 
+	height: 25px; 
+	line-height: 25px;
+}

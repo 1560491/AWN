@@ -1,0 +1,45 @@
+p.alignCenter {
+    text-align: center;
+
+
+}
+
+.btn_see {
+	text-align: center;
+	    margin-right: 0;
+	    
+}
+
+
+.btn_save {
+	text-align: center;
+	    margin-right: 0;
+}
+
+
+
+.search_form_page .search_form_page_ input[type="text"]
+{
+	height: 56px;
+}
+
+
+h5 span {
+	    margin-bottom: 63px;
+}
+
+
+.block-title {
+	padding-bottom: 27px;
+}
+
+
+
+element.style {
+    vertical-align: top;
+}
+
+th{
+	vertical-align: top;
+    text-align: none;
+

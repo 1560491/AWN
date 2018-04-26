@@ -1,0 +1,156 @@
+.btn-danger
+{
+    background-color: #dc3333;
+    border-color: #dc3333;
+}
+
+li{
+    list-style: none;
+}
+h5 span
+{
+    display: block;
+    margin-bottom: 10px;
+}
+.filter-group ul
+{
+    margin-left: -35px;
+}
+.filter-group #collapse1
+{
+    max-height: none;
+}
+.filter-group #collapse1 a:hover
+{
+    font-size: 16px;
+}
+.filter-container__selected-filter-item > a
+{
+    font-size: 14px;
+    margin-left: -40px;
+}
+.filter-container__clear-all
+{
+    margin: -5px 0px 10px 0px;
+}
+.filter-container__clear-all:hover
+{
+    color: #0f96c6;
+}
+.article .collection_header
+{
+    margin-top: 36px;
+}
+th{
+    text-align: center;
+}
+.list-items td a img
+{
+    max-width: 150px;
+    max-height: 120px;
+}
+.product-seller a
+{
+    color: #d2092d;
+    text-decoration: none;
+}
+.item_loop_list_title a {
+    color: black
+}
+.product-seller
+{
+    font-size: 13px
+}
+h3
+{
+    font-size: 15px
+}
+.product-sub
+{
+    font-size: 13px
+}
+
+td{
+    font-size: 14px;
+    text-align: center;
+    vertical-align: top;
+    padding-top:25px;
+}
+.mota
+{
+    text-align: left;
+    vertical-align: middle;
+    padding-top:0px;
+
+}
+.border-under
+{
+    background-color: #dc3333;
+    margin: 0;
+    padding: 0;
+    height: 1px;
+}
+.btn_see
+{
+    text-align: right;
+    margin-top: 10px;
+
+
+}
+.btn_see a, .btn_save a
+{
+    color: #2aabd2;
+    border: 1px solid #CCC;
+    background-color: #FFF;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#FEFEFE),to(#EFEFEF));
+    background-image: linear-gradient(#FEFEFE,#EFEFEF);
+    padding: 3px 10px;
+    font-size: 14px;
+    line-height: 26px
+}
+.btn_see a:hover
+{
+    color: #5cb85c;
+}
+.btn_save
+{
+    margin-right: 20px;
+    text-align: right;
+}
+.btn_see a:hover
+{
+    color: #dc3333;
+}
+p{
+    margin-bottom: 5px;
+}
+.menu
+{
+    text-align: center;
+}
+.menu .pagination
+{
+    float:none;
+}
+.btn_save a:focus
+{
+    color: #f3CB4F;
+    text-decoration: none;
+
+}
+input[type=checkbox]+ label span
+{
+display: inline-block;
+font-size: 20px;
+}
+input[type=checkbox]
+{
+    display: none;
+}
+input[type=checkbox]:checked+ label span
+{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: yellow;
+}

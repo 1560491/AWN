@@ -1,0 +1,89 @@
+﻿body {
+    margin:0px; 
+    padding:0px;
+    font-family:"lucida grande",tahoma,verdana,arial,sans-serif; 
+    font-size:14px; 
+   
+}
+
+
+.clear {clear:both;}
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+
+
+#container {
+    width:980px;
+    margin:0px auto;
+    line-height: 18px;
+}
+
+
+#facebook-like-box {    
+    width:245px;
+    height:255px;
+    margin-top:12px;
+    background-color:#F2F2F2;
+    float:right;
+}
+
+
+#help-content {
+    padding:20px 20px;
+    background-color:#fff;
+}
+
+#pane-main {
+    background-color:#fff;
+    margin-top:1px;
+}
+
+
+
+.list-news-item {
+    margin-bottom:12px;    
+}
+
+.news-title {
+    font-size:14px;
+    margin-bottom:6px;    
+	padding: 3px 0px;
+	border-bottom:dotted 1px #ccc;
+}
+
+.news-short-desc {display:none;}
+
+#news-title {
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:12px;    
+	padding-bottom:3px;
+    border-bottom:dotted 1px #ccc;
+	
+}
+
+#news-content {font-family:Arial}
+
+#news-info {
+    display:none;    
+}
+
+#related-news {
+    margin:20px;
+    padding-bottom:12px;    
+}
+
+.rn-title {
+    font-size: 14px;
+    margin-bottom: 6px;
+    font-weight:bold;
+    padding-bottom: 3px;
+    border-bottom: dotted 1px #ccc; 
+}
+
+.rni-title {
+    font-size: 13px;
+    margin-bottom: 6px;
+    margin-bottom: 3px;
+}

@@ -1,0 +1,85 @@
+/**
+ * Responsive Bootstrap Tabs by @thuongdope
+ * 1 October 2016
+ */
+@media screen and (max-width: 543px) {
+  .nav-tabs-responsive > li {
+    display: none;
+        width: 0%;
+    border: none;
+  }
+  .nav-tabs-responsive > li > a {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    width: 100%;
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+  }
+  .nav-tabs-responsive > li.active {
+    width: 100%;
+  }
+  .nav-tabs-responsive > li.active:first-child {
+    margin-left: 0%;
+  }
+  .nav-tabs-responsive > li.active, .nav-tabs-responsive > li.prev, .nav-tabs-responsive > li.next {
+    display: block;
+  }
+  .nav-tabs-responsive > li.prev, .nav-tabs-responsive > li.next {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+	.nav-tabs-responsive > li.prev {float:left; position:relative; top:5px!important; left:10px!important;}
+	.nav-tabs-responsive > li.next {float:right;position:relative;top: -35px!important;right: 20px!important;}
+  .nav-tabs-responsive > li.next > a, .nav-tabs-responsive > li.prev > a {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .nav-tabs-responsive > li.next > a .text, .nav-tabs-responsive > li.prev > a .text {
+    display: none;
+  }
+  .nav-tabs-responsive > li.next > a:after, .nav-tabs-responsive > li.next > a:after, .nav-tabs-responsive > li.prev > a:after, .nav-tabs-responsive > li.prev > a:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	  color:#fff;
+  }
+  .nav-tabs-responsive > li.prev > a:after {
+    content: "\f053";
+	  background: none;
+	  
+  }
+  .nav-tabs-responsive > li.next > a:after {
+    content: "\f054";
+	  background: none;
+	  
+  }
+  
+}
+/**
+ * Demo Styles
+ */
+.wrapper {
+  padding: 15px 0;
+}
+
+.bs-example-tabs .nav-tabs {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 543px) {
+  #narrow-browser-alert {
+    display: none;
+  }
+	#myTabContent ..col-lg-3.box-product {margin:0px 0px 10px 0px;}
+	
+}
